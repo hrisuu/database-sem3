@@ -1,0 +1,6 @@
+singular,
+multiple occurance
+importance
+independent 
+
+types of integrity

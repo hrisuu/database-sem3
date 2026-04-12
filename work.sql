@@ -10,6 +10,10 @@ ALTER TABLE ContactDetails ADD contact_id NUMBER;
 INSERT INTO contactdetails(phone_no, email)
 VALUES (9800000000, 'nami@nami.edu.np')
 
+
+SELECT * FROM ContactDetails WHERE Phone_no = "9800000000";
+SELECT * FROM ContactDetails WHERE email = "nami@nami.edu.np";
+
 --Address
 CREATE TABLE
     Address (
@@ -22,6 +26,12 @@ ALTER TABLE Address ADD CONSTRAINT pk_address PRIMARY KEY (Address_no);
 
 INSERT INTO address(address_no, province, district)
 VALUES (1, 'Koshi', 'Sunsari')
+
+SELECT * 
+FROM Address
+WHERE province = 'Koshi';
+
+SELECT * FROM Address WHERE district = "Sunsari";
 
 -- Identity
 CREATE TABLE
@@ -52,6 +62,9 @@ ALTER TABLE Education ADD CONSTRAINT pk_education PRIMARY KEY (education_id);
 INSERT TABLE education(Institution, Year, GPA, Stream)
 VALUES ('Tribhuwan University', 2020, 3.5, 'Science')
 
+-- SELECT * FROM education 
+-- WHERE 
+
 
 -- Profession
 CREATE TABLE
@@ -64,3 +77,22 @@ CREATE TABLE
 ALTER TABLE Profession ADD profession_id NUMBER;
 
 ALTER TABLE Profession ADD CONSTRAINT pk_profession PRIMARY KEY (profession_id);
+
+
+
+SELECT FROM * products
+WHERE price IN(30 ,40,50); 
+
+-- alternative method
+SELECT FROM * products
+WHERE price= 30 OR price=40 OR price=50;
+
+SELECT FROM * products
+WHERE price>10 AND price<30;
+
+SELECT FROM * products
+WHERE price BETWEEN 9 AND 29;
+
+SELECT FROM * products
+WHERE price!=30 OR price!=40 OR price!=50;
+
