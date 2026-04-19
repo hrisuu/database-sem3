@@ -96,3 +96,4 @@ WHERE price BETWEEN 9 AND 29;
 SELECT FROM * products
 WHERE price!=30 OR price!=40 OR price!=50;
 
+-- order of execution of query- hw
