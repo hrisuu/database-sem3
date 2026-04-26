@@ -1,0 +1,8 @@
+--ACTIVITY 1- THINKING ABOUT STRUCTURE
+--What are the steps used to create the following info?
+--Contact details should be stored as a varray column in a relational table called students
+  --student id
+  --surname
+  --contact home house no, street, town, postcode
+  --contact uni house no, street, town, postcode
+  --contact work house no, street no, town, postcode
